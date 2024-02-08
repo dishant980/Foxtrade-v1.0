@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <item
+        android:id="@+id/notifi"
+           app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_circle_notifications_24"
+        android:title="@string/notification"
+        >
+
+    </item>
+    <item
+        android:id="@+id/top_setting"
+        android:title="@string/Setting"
+        android:icon="@drawable/twotone_settings_suggest_24"
+
+       />
+
+
+</menu>

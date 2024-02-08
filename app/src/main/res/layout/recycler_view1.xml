@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="181dp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="5sp"
+        app:cardBackgroundColor="#D8F7FF"
+        android:elevation="5sp"
+        app:cardUseCompatPadding="false"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/card_back"
+
+            >
+            <TextView
+                android:fontFamily="@font/inter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:textSize="15sp"
+                android:textColor="@android:color/primary_text_light"
+                android:text="Data"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Date_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:fontFamily="@font/inter"
+                    android:hint="2023-02-15"
+                    android:textColor="#0E6878"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <View
+                android:background="@drawable/line2"
+                android:layout_width="100sp"
+                android:layout_height="2sp"
+                android:layout_marginLeft="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="3sp"
+                android:fontFamily="@font/inter"
+                android:text="Downline ID"
+                android:textSize="15sp"
+                android:textColor="@android:color/primary_text_light"
+
+                />
+
+
+            <TextView
+                android:textColor="#0E6878"
+                android:fontFamily="@font/inter"
+                android:id="@+id/down_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:hint="Month"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+
+            <View
+                android:background="@drawable/line2"
+                android:layout_width="100sp"
+                android:layout_height="2sp"
+                android:layout_marginLeft="15sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15sp"
+                android:textSize="15sp"
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="@font/inter"
+                android:layout_marginTop="5sp"
+                android:text="Level" />
+
+            <TextView
+                android:id="@+id/level_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:hint="101.0"
+                android:textColor="#0E6878"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginTop="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10sp"
+                    android:fontFamily="@font/inter"
+                    android:text="Return on Investment"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/return_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:hint="101.00"
+                    android:textStyle="bold"
+                    android:textColor="#0E6878"
+                    android:textSize="18sp" />
+
+                <View
+                    android:background="@drawable/line2"
+                    android:layout_width="100sp"
+                    android:layout_height="2sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commision on ROI"
+                    android:layout_marginTop="3sp"
+                    android:textColor="@android:color/primary_text_light"
+                    android:fontFamily="@font/inter"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/com_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:hint="101.00"
+                    android:textStyle="bold"
+                    android:textColor="#0E6878"
+                    android:textSize="18sp" />
+
+                <View
+                    android:background="@drawable/line2"
+                    android:layout_width="100sp"
+                    android:layout_height="2sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="@android:color/primary_text_light"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="@font/inter"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/total_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:hint="101.00"
+                    android:textStyle="bold"
+                    android:textColor="#0E6878"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

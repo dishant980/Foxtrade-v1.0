@@ -1,0 +1,12 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the scale animation -->
+    <scale
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.5"
+    android:toYScale="0.5"
+    android:duration="1000"
+    android:fillAfter="false" />
+
+</set>

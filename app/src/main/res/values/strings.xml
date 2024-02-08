@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">Foxtrade</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="title_activity_kyc1">kyc1</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="balance">Balance</string>
+    <string name="title_activity_fund_transfer_history">FundTransferHistoryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="deposite">Deposite</string>
+    <string name="self_ninvestment">Self\nInvestment</string>
+    <string name="fund_ntransfer">Fund\nTransfer</string>
+    <string name="add_nfund">Add\nFund</string>
+    <string name="team_nself_investment">Team\nSelf-Investment</string>
+    <string name="monthly">Monthly</string>
+    <string name="_000_00">000.00</string>
+    <string name="account">Account</string>
+    <string name="wallet">wallet</string>
+    <string name="reward">Reward</string>
+    <string name="refer">Refer</string>
+    <string name="Wallet">Wallet</string>
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="recharge_pay_bills">Recharge Pay Bills</string>
+    <string name="dth">DTH</string>
+    <string name="shop">Shop</string>
+    <string name="profile">Profile</string>
+    <string name="menu">Menu</string>
+    <string name="finance">Finance</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="setting">Setting</string>
+    <string name="Logout">logout\n</string>
+    <string name="Setting">Setting</string>
+    <string name="deposit" />
+    <string name="Deposit">Deposit</string>
+    <string name="financial_report">Financial Report</string>
+    <string name="daily_income">Daily Income</string>
+    <string name="club">Club</string>
+    <string name="salary">Salary</string>
+    <string name="roi">ROI</string>
+    <string name="commission">Commission</string>
+    <string name="addfunds">Addfunds</string>
+    <string name="teams">Teams</string>
+    <string name="executive">Executive</string>
+    <string name="name">name</string>
+    <string name="team_size">Team size</string>
+    <string name="current_ninvestment">Current\ninvestment</string>
+    <string name="direct_nbusiness">Direct\nBusiness</string>
+    <string name="team_nbusiness">Team\nBusiness</string>
+    <string name="topup_nwallet">Topup\nWallet</string>
+    <string name="ledger">Ledger</string>
+    <string name="salary_report">Salary Report</string>
+    <string name="add_to_wallet">Add To Wallet</string>
+    <string name="self_investment">SELF INVESTMENT</string>
+    <string name="commission_on_roi">COMMISSION ON ROI</string>
+    <string name="roi_income">ROI INCOME</string>
+    <string name="add_funds">Add Funds</string>
+    <string name="fund_transfer">Fund Transfer</string>
+    <string name="team_business">Team Business</string>
+    <string name="team_self_investment">Team Self Investment</string>
+    <string name="notification">Notification</string>
+    <string name="founders_nclub">Founders\nClub</string>
+    <string name="commission_non_roi">Commission\non ROI</string>
+    <string name="r_o_i">R.O.I</string>
+    <string name="last_name">Last Name</string>
+    <string name="your_name">Your name</string>
+    <string name="first_name">First Name</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="upload_a_selfie_as_a_photo_proof_while_holding_document_in_your_hand">Upload a selfie as a Photo Proof while holding document in your hand.</string>
+    <string name="upload_back_side_of_the_document">Upload Back side of the document</string>
+    <string name="front_side">Front Side</string>
+    <string name="upload_front_side_of_the_document">Upload front side of the document</string>
+    <string name="national_id">National Id</string>
+    <string name="driving_license">Driving license</string>
+    <string name="passport">Passport</string>
+    <string name="to_verify_your_identity_we_ask_you_to_upload_high_quality_scans_or_photos_of_your_official_identification_documents_issued_by_the_government">To verify your identity, we ask you to upload high-quality scans or photos of your official identification documents issued by the government.</string>
+    <string name="document_upload">Document Upload</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="address_2">Address 2</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="select_country">Select Country</string>
+    <string name="country">Country</string>
+    <string name="your_address">Your Address</string>
+    <string name="other">Other</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="back_side">Back Side</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="choose_file">Choose File</string>
+    <string name="_500">500</string>
+    <string name="invest">Invest</string>
+    <string name="_00">00%</string>
+    <string name="_0">0%</string>
+    <string name="_100">100%</string>
+    <string name="refer_code">Refer code</string>
+    <string name="defaultname">Defaultname</string>
+    <string name="fund_transfer_history">Fund Transfer History</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="total_balance">Total balance</string>
+    <string name="transfer_fund">Transfer Fund</string>
+    <string name="walletbalance">WalletBalance</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="transfer_back_to_admin">Transfer Back to Admin</string>
+    <string name="transfer_amount">Transfer amount</string>
+    <string name="amount_to_transfer">Amount to transfer</string>
+    <string name="beneficiary_name">Beneficiary Name</string>
+    <string name="beneficiary_referral_code">Beneficiary Referral Code</string>
+    <string name="remarks">Remarks</string>
+    <string name="referral_code">Referral code</string>
+</resources>

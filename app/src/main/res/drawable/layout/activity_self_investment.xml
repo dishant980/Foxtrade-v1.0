@@ -1,0 +1,140 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".self_investment"
+    >
+
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:includeFontPadding="true"
+        android:text="Self Investment"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#21889B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="318dp"
+        android:layout_height="55dp"
+        android:padding="3dp"
+        android:text="You have invested $1000 and received an income of $357 with this investment."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:text="Fund Transfer History"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#21889B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+
+    <TableLayout
+        android:layout_width="348dp"
+        android:layout_height="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:background="#EEEEEE"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Transfer amount" />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="Transfer Date" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="375dp"
+            android:layout_height="50dp"
+            android:background="#EEEE"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

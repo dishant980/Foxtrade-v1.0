@@ -1,0 +1,13 @@
+<!-- custom_shape_elevation.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="0dp"
+    android:right="0dp"
+    android:left="0dp"
+    android:bottom="0dp">
+    <shape android:shape="rectangle">
+        <solid android:color="#ffffff" />
+        <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+    </shape>
+</item>
+    </layer-list>

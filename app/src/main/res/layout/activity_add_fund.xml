@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_fund"
+    android:background="@drawable/profile_back">
+
+
+    <TextView
+        android:fontFamily="@font/inter"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:text="Add Funds to Wallet"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15sp"
+        />
+
+    <EditText
+        android:fontFamily="@font/inter"
+        android:id="@+id/appCompatEditText"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5sp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/dollar"
+        android:hint="Minimum Amount $100"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+
+         />
+
+    <TextView
+        android:fontFamily="@font/inter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10sp"
+        android:text="Network Fees : 0.50% or $1.00 whichever is higher will be added"
+        android:textSize="15sp"
+         />
+
+    <Button
+        android:fontFamily="@font/inter"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/invest_1"
+        android:text="Add Funds"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="15dp"
+         />
+</LinearLayout>

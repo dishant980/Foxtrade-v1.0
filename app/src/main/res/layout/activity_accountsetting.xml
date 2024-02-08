@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/profile_back"
+    >
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Accountsetting"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:scrollbarDefaultDelayBeforeFade="@integer/material_motion_duration_short_1"
+    android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15sp"
+            android:background="@drawable/shape_panel">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Information"
+            android:textSize="20dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="13sp"
+            android:fontFamily="@font/inter"
+            android:text="Update your account's profile information and email address."
+            android:textSize="12dp"
+            android:textColor="@android:color/primary_text_light"
+            />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="22sp"
+                android:text="Name"
+                android:fontFamily="@font/inter"
+                android:textColor="@android:color/primary_text_light"
+                />
+
+            <TextView
+                android:id="@+id/name_user"
+                android:layout_width="266dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:hint="User Name"
+                android:textColor="#0E6878"
+                android:paddingLeft="20sp"
+                android:fontFamily="@font/inter"
+                android:singleLine="true"
+                android:padding="10sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="22sp"
+                android:text="Email"
+                android:fontFamily="@font/inter"
+                android:textColor="@android:color/primary_text_light"
+                />
+
+            <TextView
+                android:id="@+id/email_user"
+              android:layout_width="266dp"
+              android:layout_height="49dp"
+              android:layout_marginLeft="12dp"
+              android:hint="Email Address"
+              android:paddingLeft="25sp"
+              android:padding="10sp"
+              android:textColor="#0E6878"
+              android:fontFamily="@font/inter"
+              android:singleLine="true"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15sp"
+        android:id="@+id/password_forum"
+        android:background="@drawable/shape_panel"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10sp"
+            android:text="Update Password"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10sp"
+            android:fontFamily="@font/inter"
+            android:text="Ensure your account is using a long, random password to stay secure."
+            android:textSize="12dp"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20sp"
+            android:text="Old Password"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            >
+        <EditText
+            android:id="@+id/current_pass"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:background="@drawable/custom_input"
+            android:singleLine="true"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20sp"
+            android:text="New Password"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            >
+        <EditText
+            android:id="@+id/new_pass"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:paddingLeft="25sp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_input"
+            android:singleLine="true"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20sp"
+            android:fontFamily="@font/inter"
+            android:text="Confirm Password"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            >
+        <EditText
+            android:id="@+id/confirm_pass"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:paddingLeft="25sp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_input"
+            android:singleLine="true"
+
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/update_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@drawable/invest_new"
+            android:fontFamily="@font/inter"
+            android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_panel"
+            android:paddingLeft="12dp"
+            android:layout_margin="15sp"
+            android:paddingRight="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10sp"
+                android:text="Two Factor Authentication"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:textColor="@android:color/primary_text_light"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingStart="10sp"
+                android:fontFamily="@font/inter"
+                android:text="Add additional security to your account using two factor authentication."
+                android:textSize="12sp"
+                android:textColor="@android:color/primary_text_light"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="10sp"
+                android:fontFamily="@font/inter"
+                android:text="When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application."
+                android:textSize="12sp"
+                android:textColor="@android:color/primary_text_light"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="22sp"
+                android:text="Enable"
+                android:textColor="@color/white"
+                android:background="@drawable/invest_new"
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_panel"
+        android:paddingLeft="12dp"
+        android:layout_margin="15sp"
+        android:paddingRight="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10sp"
+            android:text="Delete Account"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingStart="10sp"
+            android:fontFamily="@font/inter"
+            android:text="Permanently delete your account."
+            android:textSize="12sp"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:paddingLeft="10sp"
+            android:fontFamily="@font/inter"
+            android:text="Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain."
+            android:textSize="12dp"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <Button
+            android:id="@+id/delete123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22sp"
+            android:textColor="@color/white"
+            android:background="@drawable/invest_new"
+            android:text="Delete Account"
+            android:gravity="center"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:fontFamily="@font/inter"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

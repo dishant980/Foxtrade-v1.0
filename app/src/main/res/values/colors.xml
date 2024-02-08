@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar"/>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttonColorClicked">#0194B9</color>
+    <color name="buttonColor">#FFFFFF</color>
+    <color name="originalColor">#000000</color>
+    <color name="clickedColor">#0194B9</color>
+
+</resources>

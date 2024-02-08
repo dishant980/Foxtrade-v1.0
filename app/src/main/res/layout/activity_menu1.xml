@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+    
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <androidx.gridlayout.widget.GridLayout
+
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40ssp"
+            android:focusable="true"
+            app:rowCount="1"
+            app:columnCount="2"
+            app:rowOrderPreserved="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/account_1"
+                style="@style/CardView.Light"
+                android:background="@drawable/dashh"
+                app:cardElevation="10sp"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:background="#FCEFD9"
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_acc"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:id="@+id/acc_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:text="Account"
+                        android:textSize="@dimen/_11ssp"
+                        android:focusable="true"
+                        android:textColor="@android:color/primary_text_light"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="5sp"
+                android:id="@+id/menu_referral"
+                android:contextClickable="true"
+                style="@style/CardView.Light"
+                android:background="@drawable/dashh"
+                app:cardElevation="10sp"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:background="#DFECFA"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img1"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/new_ref" />
+
+                    <TextView
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:id="@+id/acc_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Referral list"
+                        android:textSize="@dimen/_11ssp"
+                        android:textColor="@android:color/primary_text_light"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/setting"
+                android:contextClickable="true"
+                style="@style/CardView.Light"
+                app:cardElevation="10sp"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#DCECEB"
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img2"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/new_set" />
+
+                    <TextView
+                        android:id="@+id/acc_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Setting"
+                        android:textSize="@dimen/_11ssp"
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"                        android:focusable="true"
+                        android:textColor="@android:color/primary_text_light"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/income_123"
+                style="@style/CardView.Light"
+                app:cardElevation="10sp"
+                android:background="@drawable/dashh"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#E7E1F3"
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img3"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/new_inc" />
+
+                    <TextView
+                        android:id="@+id/acc_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Income"
+                        android:textSize="@dimen/_11ssp"
+                        android:clickable="true"
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/primary_text_light"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/support_123"
+                android:contextClickable="true"
+                style="@style/CardView.Light"
+                app:cardElevation="10sp"
+                android:background="@drawable/dashh"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#E7E1F3"
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img4"
+                        android:clickable="true"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_supp"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/acc_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Support"
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_11ssp"
+                        android:clickable="true"
+                        android:textColor="@android:color/primary_text_light"
+                        android:focusable="true" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/directb"
+                android:contextClickable="true"
+                style="@style/CardView.Light"
+                app:cardElevation="10sp"
+                app:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#F9E5E6"
+                    >
+
+                    <ImageView
+                        android:id="@+id/acc_img5"
+                        android:clickable="true"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_trad"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:id="@+id/acc_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Trading No."
+                        android:textSize="@dimen/_11ssp"
+                        android:clickable="true"
+                        android:textColor="@android:color/primary_text_light"
+                        android:focusable="true" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/bottam_navigator"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        android:background="@drawable/botam_back">
+        <include layout="@layout/custom_menu_item"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

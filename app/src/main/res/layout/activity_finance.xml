@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".finance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#0194B9"
+            app:menu="@menu/top_menu"
+            app:popupTheme="@style/Theme.Foxtrade.PopupOverlay">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/profile12" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:saveEnabled="false">
+
+            <ImageView
+                android:id="@+id/slider"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_290sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/fox_back" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finance"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.gridlayout.widget.GridLayout
+
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/month_grid"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:elevation="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:overScrollMode="always"
+                    app:columnCount="2"
+                    app:rowCount="1"
+                    app:rowOrderPreserved="true">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/account_1"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/dashh"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FCEFD9"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/acc_img"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/new_acc" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/inter"
+                                android:text="Roi Income"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/menu_referral"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/dashh"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5sp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#DFECFA"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/acc_img1"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/comm_on" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter"
+                                android:text="Commission on Roi"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/setting"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:elevation="12dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#DCECEB"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/acc_img2"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:src="@drawable/self_newacc" />
+
+                            <TextView
+                                android:id="@+id/acc_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:focusable="true"
+                                android:fontFamily="@font/inter"
+                                android:text="Self Investment"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/income_123"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/dashh"
+                        android:clickable="true"
+                        android:elevation="12dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#E7E1F3"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/acc_img3"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:src="@drawable/roi_incoo" />
+
+                            <TextView
+                                android:id="@+id/acc_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/ledger"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/support_123"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/dashh"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:elevation="12dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#E7E1F3"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/acc_img4"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/new_ref" />
+
+                            <TextView
+                                android:id="@+id/acc_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/salary_report"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/directb"
+                        style="@style/CardView.Light"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="12dp"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:elevation="12dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp"
+                        app:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#F9E5E6"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/acc_img5"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_48sdp"
+                                android:layout_gravity="center"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/add_to" />
+
+                            <TextView
+                                android:id="@+id/acc_text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/inter"
+                                android:gravity="center"
+                                android:text="@string/add_to_wallet"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.gridlayout.widget.GridLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottam_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/botam_back"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu">
+
+        <include layout="@layout/custom_menu_item" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

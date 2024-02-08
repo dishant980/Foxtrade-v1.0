@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fund_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_form"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="@dimen/_20sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_12ssp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:background="@drawable/new_button"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#DCECEB"
+        >
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wallet Balance"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+    <TextView
+        android:id="@+id/wallet_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/_000_00"
+        android:fontFamily="@font/inter"
+        android:textSize="@dimen/_15ssp"
+        android:textColorHint="@color/black"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@android:color/primary_text_light"
+
+        />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <CheckBox
+            android:id="@+id/checkbox_transfer_to_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            android:text="Transfer Back to Admin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beneficiary_referral_code"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/inter"
+            android:layout_marginBottom="@dimen/_3sdp"
+            />
+
+        <EditText
+            android:id="@+id/referCode"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/new_edit"
+            android:hint="@string/referral_code"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/primary_text_light"
+            android:inputType="number"
+            android:padding="7dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beneficiary_name"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="40sp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@android:color/primary_text_light"
+
+            />
+
+        <TextView
+            android:id="@+id/beneficiary_name"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Beneficiary Name"
+            android:layout_gravity="center"
+            android:background="@drawable/new_edit"
+            android:textColor="@android:color/primary_text_light"
+            android:fontFamily="@font/inter"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_to_transfer"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/inter"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textColor="@android:color/primary_text_light"
+
+        />
+
+    <EditText
+        android:id="@+id/Transfer_amount"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="@string/transfer_amount"
+        android:inputType="number"
+        android:singleLine="true"
+        android:fontFamily="@font/inter"
+        android:layout_gravity="center"
+        android:background="@drawable/new_edit"
+        android:textColor="@android:color/primary_text_light"
+        android:padding="7dp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remarks"
+        android:fontFamily="@font/inter"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="40sp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textColor="@android:color/primary_text_light"
+
+        />
+
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/new_edit"
+        android:hint="@string/remarks"
+        android:fontFamily="@font/inter"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+
+    <Button
+        android:id="@+id/Transfer_fund"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/new_button"
+        android:text="@string/transfer_fund"
+        android:fontFamily="@font/inter"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_15sdp"
+               />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signup">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Username"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:paddingStart="12dp"/>
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Enter Email"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:paddingStart="12dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Referral code"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/ic_referral"
+        android:paddingStart="12dp"
+        android:id="@+id/code1"
+
+        />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Enter Password"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:layout_marginTop="20dp"
+        android:paddingStart="12dp"/>
+
+
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:layout_marginTop="20dp"
+        android:paddingStart="12dp"/>
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/buttondesign"
+        android:textColor="@color/white"
+        android:text="Registration"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="2dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:text="Already have an account ? Sign in"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".referral_list">
+
+
+   <ImageView
+       android:id="@+id/imageView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.881"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.054"
+       app:srcCompat="@drawable/account_bottom" />
+
+   <androidx.appcompat.widget.SearchView
+       android:layout_width="match_parent"
+       android:layout_height="38dp"
+       android:clickable="true"
+       app:iconifiedByDefault="false"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.934"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.159"
+       android:background="#EEEEEE"
+
+       />
+
+   <TextView
+       android:id="@+id/textView10"
+       android:layout_width="150dp"
+       android:layout_height="31dp"
+       android:text="Referral List"
+       android:textSize="25sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.061"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.047" />
+
+   <HorizontalScrollView
+       android:id="@+id/horizontalScrollView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+      <TableLayout
+          android:layout_width="400dp"
+          android:layout_height="450dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.315">
+
+         <TableRow
+             android:layout_width="375dp"
+             android:layout_height="50dp"
+             android:background="#EEEEEE">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="Sr No."
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Referral Code"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Self Investment"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Team size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:gravity="center"
+                android:text="Team Business"
+                android:textStyle="bold"/>
+
+
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="1." />
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Shri Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203" />
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="2."
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:background="#EEEEEE"
+
+                android:text="Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473"
+                android:background="#EEEEEE"/>
+
+
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="3." />
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Shri Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203" />
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="4."
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:background="#EEEEEE"
+
+                android:text="Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473"
+                android:background="#EEEEEE"/>
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="5." />
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="Shri Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203" />
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:text="6."
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:background="#EEEEEE"
+
+                android:text="Ganesh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="99794203"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="$0"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="7dp"
+                android:text="824"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="$390473"
+                android:background="#EEEEEE"/>
+
+
+
+
+         </TableRow>
+
+
+
+      </TableLayout>
+   </HorizontalScrollView>
+
+   <TextView
+       android:id="@+id/textView14"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="ID if the User"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.157"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.093" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

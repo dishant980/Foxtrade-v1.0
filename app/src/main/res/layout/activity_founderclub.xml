@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/profile_back"
+    >
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_found"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:queryHint="Search Here..."
+        app:searchHintIcon="@color/black"
+        android:textAppearance="@font/inter"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@drawable/search_back"
+        app:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle4"/>
+
+
+</LinearLayout>

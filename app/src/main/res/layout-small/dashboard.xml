@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#C1D9EE">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="#0194B9"
+                app:menu="@menu/top_menu"
+                app:popupTheme="@style/Theme.Foxtrade.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/profile_logo"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:onClick="onButtonClick"
+                    android:background="@drawable/profile12"
+                    android:contentDescription="@null"/>
+            </androidx.appcompat.widget.Toolbar>
+            <ImageView
+                android:id="@+id/slider"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/slid_image" />
+            <LinearLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12sp"
+                android:background="#0194B9"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rank_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view25"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_weight="50"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/codeText"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:fontFamily="@font/inter"
+                    android:text="12345"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:fontFamily="@font/inter"
+                    android:text="Defaultname"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/new_design"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="Financial Report"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:textColor="@android:color/primary_text_light"
+                    />
+
+
+            </LinearLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/new_design2"
+                android:textAlignment="center"
+                app:alignmentMode="alignMargins"
+                app:columnCount="4"
+                app:orientation="horizontal"
+                app:rowOrderPreserved="true">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:src="@drawable/newww" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="@string/daily_income"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/wallet_bal"
+                        style="@style/TextAppearance.Material3.BodySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:text="000.00"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/with_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Withdrawal"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/ttb_bal"
+                        style="@style/TextAppearance.Material3.BodySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17sp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:text="000.00"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center_horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/team_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:text="Team size"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/topup_wall" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:text="Wallet"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/mtb_bal"
+                        style="@style/TextAppearance.Material3.BodySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/_000_00"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/current_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Current\ninvestment"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/team_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Team\nBusiness"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_gravity="center"
+                    app:layout_columnWeight="1">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/team_new" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Direct\nBusiness"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="97dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/current_with" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Current\nwithdrawal"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="#0194B9"
+                app:columnCount="4"
+                app:rowOrderPreserved="true"
+                app:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="2"
+                    app:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="ROI"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/roi_new1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Commission"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/comm_newic" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="2"
+                    app:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Club"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/club_new1" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_gravity="center"
+                    app:layout_columnWeight="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Salary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/salar_new" />
+
+
+                </LinearLayout>
+            </androidx.gridlayout.widget.GridLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/new_design2"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/depo_new1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Deposit"
+                        android:fontFamily="@font/inter"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/seprate"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/with_new1"
+                        android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdrawal"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="@dimen/_10ssp"
+                    android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:background="@drawable/new_design2"
+                app:columnCount="4"
+                app:orientation="horizontal"
+                app:rowOrderPreserved="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="2"
+                    app:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/self_new1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Self \nInvestment"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="2"
+                    app:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/fund_transn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Fund \nTransfer"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="2"
+                    app:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/add_fund1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Add\nFund"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/team_self" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Team\nSelf Investment"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textSize="@dimen/_10ssp"
+
+                        />
+                </LinearLayout>
+            </androidx.gridlayout.widget.GridLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottam_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_gravity="bottom"
+           app:itemIconTint="@color/black"
+
+           app:layout_anchorGravity="center"
+        app:menu="@menu/bottom_menu"
+        android:background="@drawable/botam_back"
+        app:labelVisibilityMode="unlabeled"
+        >
+           <include layout="@layout/custom_menu_item"
+               />
+       </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

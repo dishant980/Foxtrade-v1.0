@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D9EE"
+    tools:context=".finance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#0194B9"
+            app:menu="@menu/top_menu"
+            app:popupTheme="@style/Theme.Foxtrade.PopupOverlay">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/profile12"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/slider"
+            android:src="@drawable/slid_image"
+            android:layout_width="@dimen/_340sdp"
+            android:layout_height="@dimen/_102sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            />
+        <ImageView
+            android:layout_width="@dimen/_340sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:src="@drawable/new_ban1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"   />
+        <LinearLayout
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/new_design"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="@string/teams"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@android:color/primary_text_light"
+                />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <Button
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/add_funds"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingStart="-218dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableEnd="@drawable/new_arrow"
+            android:background="@drawable/back_new2"
+            android:textSize="@dimen/_11ssp"
+            android:drawableTint="@color/black"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <Button
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/fund_transfer"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingStart="-185dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableEnd="@drawable/new_arrow"
+            android:background="@drawable/back_new2"
+            android:drawableTint="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <Button
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/team_size"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingStart="-225dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableEnd="@drawable/new_arrow"
+            android:background="@drawable/back_new2"
+            android:drawableTint="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@android:color/primary_text_light"
+            />
+        <Button
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/inter"
+            android:text="Team Business"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingStart="-185dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:drawableEnd="@drawable/new_arrow"
+            android:background="@drawable/back_new2"
+            android:drawableTint="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@android:color/primary_text_light"
+            />
+
+                <Button
+                    android:layout_width="@dimen/_293sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/team_self_investment"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingStart="-125dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:drawableEnd="@drawable/new_arrow"
+                    android:background="@drawable/back_new2"
+                    android:textSize="@dimen/_11ssp"
+                    android:drawableTint="@color/black"
+                    android:textColor="@android:color/primary_text_light"
+                    />
+
+        </LinearLayout>
+        </ScrollView>
+            </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottam_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/botam_back"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu">
+
+        <include layout="@layout/custom_menu_item" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

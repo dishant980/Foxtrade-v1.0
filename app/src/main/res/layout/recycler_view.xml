@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="181dp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="5sp"
+        android:elevation="5sp"
+        app:cardUseCompatPadding="false"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#D8F7FF"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_back"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:fontFamily="@font/inter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/primary_text_light"
+                    android:text="Date"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:fontFamily="@font/inter"
+                    android:hint="2023-03-14"
+                    android:textColor="#0E6878"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="3sp"
+                    android:fontFamily="@font/inter"
+                    android:text="Narration"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/primary_text_light"
+
+                    />
+
+                <TextView
+                    android:textColor="#0E6878"
+                    android:fontFamily="@font/inter"
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:hint="Narration"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <View
+                    android:background="@drawable/line2"
+                    android:layout_width="300sp"
+                    android:layout_height="3sp"
+                    android:layout_marginLeft="15sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3sp"
+                >
+
+                <TextView
+                    android:textColor="@android:color/primary_text_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:textSize="15sp"
+                    android:text="Credit" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90sp"
+                    android:text="Debit"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:layout_marginLeft="80sp"
+                    android:textColor="@android:color/primary_text_light"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:hint="101.0"
+                    android:textColor="#0E6878"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85sp"
+                    android:hint="101.0"
+                    android:textColor="#0E6878"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65sp"
+                    android:hint="101.0"
+                    android:textColor="#0E6878"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
